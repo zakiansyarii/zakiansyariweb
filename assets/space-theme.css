@@ -1,0 +1,482 @@
+:root {
+  color-scheme: dark;
+  --space-bg: #05070b;
+  --space-panel: #0b0e14;
+  --space-panel-raised: #111820;
+  --space-blue: #68c7ff;
+  --space-blue-bright: #a1e2ff;
+  --space-blue-soft: #3b9ee8;
+  --space-text: #f0f5fa;
+  --space-muted: #a3afbc;
+  --space-line: rgb(130 184 226 / 16%);
+}
+
+html {
+  scroll-padding-top: 96px;
+}
+
+body {
+  background:
+    radial-gradient(ellipse at 12% 8%, rgb(22 89 145 / 14%), transparent 32rem),
+    radial-gradient(ellipse at 92% 42%, rgb(25 79 147 / 9%), transparent 38rem),
+    var(--space-bg);
+  color: var(--space-text);
+}
+
+body::after {
+  background:
+    radial-gradient(circle at 12% 16%, rgb(140 210 255 / 40%) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 78% 22%, rgb(140 210 255 / 35%) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 63% 68%, rgb(140 210 255 / 28%) 0 1px, transparent 1.5px),
+    radial-gradient(ellipse at 15% 0%, rgb(47 143 220 / 14%), transparent 38%);
+  background-size: 190px 210px, 270px 250px, 340px 300px, auto;
+  animation: star-drift 38s linear infinite;
+}
+
+.grain {
+  opacity: .025;
+}
+
+.navbar {
+  background: rgb(5 7 11 / 90%);
+  border-bottom-color: var(--space-line);
+}
+
+.brand b,
+.eyebrow,
+.hero h1 em,
+.section h2 em,
+.admin-link,
+.profile-facts small,
+.project-body small,
+.credential-card small,
+.text-link,
+.timeline-item > small,
+.visitor-pill b {
+  color: var(--space-blue);
+}
+
+.brand-mark {
+  border-color: var(--space-blue);
+  color: var(--space-blue-bright);
+  box-shadow: 0 0 24px rgb(67 170 239 / 12%);
+}
+
+.navbar nav a {
+  color: #c2d2e2;
+}
+
+.navbar nav a:hover,
+.text-link:hover {
+  color: var(--space-blue-bright);
+}
+
+.nav-cta {
+  border-color: rgb(104 199 255 / 48%);
+  color: var(--space-blue-bright) !important;
+}
+
+.hero {
+  isolation: isolate;
+}
+
+.hero::before {
+  position: absolute;
+  z-index: -1;
+  inset: 4% 0 8% 25%;
+  content: "";
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 66% 46%, rgb(24 108 183 / 24%), transparent 38%),
+    radial-gradient(ellipse at 44% 55%, rgb(34 82 149 / 15%), transparent 52%);
+  filter: blur(8px);
+}
+
+.live-dot {
+  background: var(--space-blue-bright);
+  box-shadow: 0 0 14px rgb(104 199 255 / 85%);
+}
+
+.hero h1 em,
+.section h2 em {
+  color: var(--space-blue-bright);
+  text-shadow: 0 0 30px rgb(68 167 232 / 18%);
+}
+
+.lead,
+.about-main > p {
+  color: #bdcada;
+}
+
+.btn {
+  border-radius: 7px;
+}
+
+.gold {
+  background: linear-gradient(120deg, #49a9ea, #83d5ff);
+  color: #061322;
+  box-shadow: 0 8px 28px rgb(46 151 221 / 18%);
+}
+
+.gold:hover {
+  background: linear-gradient(120deg, #78c9ff, #b0e8ff);
+  box-shadow: 0 12px 34px rgb(46 151 221 / 27%);
+}
+
+.ghost {
+  border-color: rgb(145 198 239 / 34%);
+  color: #e6f4ff;
+}
+
+.ghost:hover {
+  border-color: var(--space-blue);
+  background: rgb(76 164 222 / 8%);
+}
+
+.hero-art {
+  perspective: 1000px;
+}
+
+.profile-frame {
+  border-color: rgb(104 199 255 / 62%);
+  background: #0b1a2b;
+  box-shadow: 0 35px 90px rgb(0 0 0 / 50%), 0 0 54px rgb(48 140 210 / 13%);
+  animation: portrait-float 7s ease-in-out infinite;
+}
+
+.profile-frame img {
+  filter: saturate(.88) contrast(1.04);
+}
+
+.frame-corner {
+  border-color: var(--space-blue-bright);
+}
+
+.orbit {
+  border-color: rgb(104 199 255 / 18%);
+}
+
+.orbit-two {
+  border-color: rgb(104 199 255 / 13%);
+}
+
+.floating-note {
+  background: rgb(13 28 46 / 92%);
+  border-color: var(--space-line);
+  border-radius: 8px;
+  backdrop-filter: blur(14px);
+  animation: note-float 5s ease-in-out infinite;
+}
+
+.gold-dot {
+  background: var(--space-blue);
+}
+
+.note-top span {
+  color: var(--space-blue-bright);
+  background: transparent;
+}
+
+.hero-bottom .line {
+  background: rgb(151 206 248 / 28%);
+}
+
+.section-dark,
+.timeline-section {
+  background:
+    radial-gradient(ellipse at 85% 0%, rgb(25 75 117 / 9%), transparent 34rem),
+    linear-gradient(145deg, #090c11, #05070b);
+  border-color: rgb(130 184 226 / 8%);
+}
+
+.section-sub,
+.muted {
+  color: var(--space-muted);
+}
+
+.profile-facts div {
+  border-top-color: rgb(104 199 255 / 43%);
+}
+
+.quote-card {
+  background: linear-gradient(145deg, #11161d, #090c11);
+  border-color: var(--space-line);
+  border-radius: 12px;
+  box-shadow: 0 22px 55px rgb(0 0 0 / 19%);
+}
+
+.quote-symbol {
+  color: var(--space-blue);
+}
+
+.quote-rule {
+  background-color: var(--space-blue);
+}
+
+.skill-card,
+.project-card,
+.credential-card,
+.contact-form {
+  border-color: rgb(119 193 255 / 13%);
+  background: linear-gradient(145deg, #11161d, #090c11);
+  border-radius: 10px;
+}
+
+.skill-card,
+.project-card {
+  transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+}
+
+.skill-card:hover,
+.project-card:hover {
+  transform: translateY(-7px);
+  border-color: rgb(104 199 255 / 52%);
+  box-shadow: 0 18px 42px rgb(0 0 0 / 24%), 0 0 26px rgb(54 153 218 / 10%);
+}
+
+.skill-card > span {
+  color: var(--space-blue);
+}
+
+.project-cover {
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 78% 30%, rgb(76 172 237 / 15%), transparent 36%),
+    linear-gradient(140deg, #151b23, #080b10);
+}
+
+.project-cover::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background: linear-gradient(90deg, rgb(3 6 11 / 78%), rgb(3 6 11 / 18%) 85%),
+    linear-gradient(0deg, rgb(3 6 11 / 48%), transparent 55%);
+}
+
+.project-cover img.project-image {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(.82) contrast(1.04);
+  transition: transform .65s ease, filter .65s ease;
+}
+
+.project-cover span,
+.project-cover b {
+  position: relative;
+  z-index: 1;
+}
+
+.project-card:hover .project-cover img.project-image {
+  transform: scale(1.045);
+  filter: saturate(1) contrast(1.04);
+}
+
+.project-cover::after {
+  border-color: rgb(104 199 255 / 32%);
+  box-shadow: 0 0 0 25px rgb(104 199 255 / 5%), 0 0 0 50px rgb(104 199 255 / 3%);
+}
+
+.project-cover span {
+  color: var(--space-blue-bright);
+}
+
+.cover-two,
+.cover-three {
+  background:
+    radial-gradient(circle at 78% 28%, rgb(76 172 237 / 12%), transparent 38%),
+    linear-gradient(140deg, #141a22, #080b10);
+}
+
+.timeline-list {
+  border-left-color: rgb(104 199 255 / 35%);
+}
+
+.timeline-dot {
+  border-color: var(--space-blue);
+  background: var(--space-bg);
+  box-shadow: 0 0 0 5px rgb(104 199 255 / 9%);
+}
+
+.credential-icon {
+  border-color: rgb(104 199 255 / 40%);
+  color: var(--space-blue);
+  border-radius: 8px;
+}
+
+.gallery-card {
+  background: #0b0e14;
+  border-radius: 9px;
+}
+
+.gallery-card img {
+  filter: saturate(.92);
+}
+
+.gallery-placeholder-card {
+  border-color: rgb(104 199 255 / 21%);
+  background: #0b0e14;
+}
+
+.gallery-placeholder-art {
+  background:
+    radial-gradient(circle at 50% 45%, rgb(73 169 234 / 18%), transparent 34%),
+    linear-gradient(145deg, #171e28, #080b10);
+}
+
+.gallery-placeholder-art::before,
+.gallery-placeholder-art::after {
+  border-color: rgb(104 199 255 / 45%);
+  box-shadow: 0 0 0 20px rgb(104 199 255 / 5%), 0 0 0 42px rgb(104 199 255 / 3%);
+}
+
+.gallery-placeholder-art span,
+.gallery-placeholder-art i {
+  color: var(--space-blue-bright);
+}
+
+.gallery-placeholder-art i {
+  text-shadow: 0 0 35px rgb(104 199 255 / 42%);
+}
+
+.gallery-placeholder-art.alt,
+.gallery-placeholder-art.third {
+  background:
+    radial-gradient(circle at 65% 40%, rgb(112 196 246 / 13%), transparent 34%),
+    linear-gradient(145deg, #151b24, #080b10);
+}
+
+.music-panel {
+  border-color: rgb(104 199 255 / 24%);
+  border-radius: 12px;
+  background: linear-gradient(110deg, #111820, #080b10);
+}
+
+.song-link,
+.contact-shortcuts a {
+  color: var(--space-blue-bright);
+}
+
+.guest-form input,
+.guest-form textarea,
+.contact-form input,
+.contact-form textarea, {
+  background: #080b10;
+  border-color: rgb(145 198 239 / 18%);
+  border-radius: 7px;
+}
+
+.guest-form input:focus,
+.guest-form textarea:focus,
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--space-blue);
+  box-shadow: 0 0 0 3px rgb(104 199 255 / 10%);
+}
+
+.guest-entry {
+  background: #0c1016;
+  border-left-color: var(--space-blue);
+  border-radius: 0 8px 8px 0;
+}
+
+.contact-section {
+  background:
+    radial-gradient(ellipse at 80% 12%, rgb(25 91 148 / 13%), transparent 38%),
+    linear-gradient(135deg, #0c1016, #05070b);
+  border-top-color: var(--space-line);
+}
+
+.digital-card {
+  border-color: rgb(104 199 255 / 34%);
+  border-radius: 10px;
+  background: rgb(11 15 21 / 75%);
+}
+
+.footer {
+  border-top-color: var(--space-line);
+}
+
+.visitor-pill {
+  background: rgb(10 25 42 / 91%);
+  border-color: var(--space-line);
+  backdrop-filter: blur(14px);
+}
+
+.startup-loader {
+  background:
+    radial-gradient(ellipse at 50% 38%, #102238 0%, #090d13 50%, #05070b 100%);
+}
+
+.loader-brand b,
+.loader-mark,
+.loader-card button {
+  color: var(--space-blue-bright);
+}
+
+.loader-mark,
+.loader-card button {
+  border-color: var(--space-blue);
+}
+
+.loader-orbit {
+  border-color: rgb(104 199 255 / 32%);
+}
+
+.loader-orbit::before {
+  border-color: rgb(104 199 255 / 62%);
+}
+
+.loader-orbit::after {
+  border-color: rgb(177 223 255 / 32%);
+}
+
+.loader-orbit span {
+  background: var(--space-blue-bright);
+  box-shadow: 0 0 18px var(--space-blue);
+}
+
+.loader-progress span {
+  background: linear-gradient(90deg, #2471aa, #a1e2ff, #2471aa);
+}
+
+.loader-card button:hover {
+  background: rgb(104 199 255 / 12%);
+}
+
+@keyframes portrait-float {
+  0%, 100% { transform: rotate(2deg) translateY(0); }
+  50% { transform: rotate(1deg) translateY(-9px); }
+}
+
+@keyframes note-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes star-drift {
+  from { background-position: 0 0, 0 0, 0 0, center; }
+  to { background-position: 190px 210px, -270px 250px, 340px -300px, center; }
+}
+
+@media (max-width: 760px) {
+  .navbar nav {
+    background: rgb(5 7 11 / 98%);
+    border-bottom-color: var(--space-line);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::after,
+  .profile-frame,
+  .floating-note {
+    animation: none !important;
+  }
+}

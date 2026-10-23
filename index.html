@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#07111f">
+    <meta name="description" content="Portofolio dan profil pribadi Zaki Ansyari, pelajar TJKT yang tertarik pada teknologi, jaringan, dan pengembangan web.">
+    <title>Zaki Ansyari — Personal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/site.css">
+    <link rel="stylesheet" href="assets/space-theme.css">
+  </head>
+  <body>
+    <div id="startupLoader" class="startup-loader" role="status" aria-live="polite" aria-label="Memuat website">
+      <div class="loader-card">
+        <div class="loader-brand">
+          <span class="loader-mark">Z</span>
+          <span>ZAKI <b>ANSYARI</b><small>PERSONAL Website</small></span>
+        </div>
+        <div class="loader-orbit">
+          <span></span>
+          <i></i>
+        </div>
+        <h1 id="loaderTitle">Menyiapkan Data Website</h1>
+        <p id="loaderMessage">Menghubungkan website dan menyinkronkan data terbaru…</p>
+        <div class="loader-progress">
+          <span></span>
+        </div>
+        <small id="loaderStatus">Memeriksa koneksi data</small>
+        <button id="loaderContinue" type="button" hidden>Masuk ke website</button>
+      </div>
+    </div>
+
+    <div class="grain"></div>
+
+    <header class="navbar">
+      <a class="brand" href="#home">
+        <span class="brand-mark">Z</span>
+        <span>ZAKI <b>ANSYARI</b><small>PERSONAL WEBSITE</small></span>
+      </a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+      <nav id="nav">
+        <a href="#about">Tentang</a>
+        <a href="#projects">Proyek</a>
+        <a href="#timeline">Perjalanan</a>
+        <a href="#credentials">Sertifikat & CV</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#guestbook">Buku tamu</a>
+        <a href="#contact" class="nav-cta">Kontak ↗</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero wrap">
+        <div class="hero-copy reveal">
+          <h1>ZAKI<br><em>ANSYARI</em></h1>
+          <p class="lead">Hello, I'm <strong>Zaki Ansyari</strong> —  someone who is interested in technology, computer networks, and web development.</p>
+          <div class="hero-actions">
+            <a class="btn gold" href="#projects">Jelajahi karya <span>↗</span></a>
+            <a class="btn ghost" href="#about">Kenali saya</a>
+          </div>
+          <div class="hero-meta">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="hero-art reveal">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="profile-frame">
+            <img id="heroPhoto" src="assets/profile-placeholder.svg" alt="Foto profil Zaki Ansyari">
+            <span class="frame-corner top-left"></span>
+            <span class="frame-corner bottom-right"></span>
+          </div>
+          <div class="floating-note note-bottom"><span class="gold-dot"></span> Hi, I'm Zaki Ansyari</div>
+        </div>
+        <div class="hero-bottom">
+          <span></span>
+          <span class="line"></span>
+          <span></span>
+        </div>
+      </section>
+
+      <section id="about" class="section wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">01 — PROFIL</p>
+          <h2>Sepotong Cerita Dibalik <em>Nama</em></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-main reveal">
+            <p id="aboutText">Saya adalah pelajar Teknik Jaringan Komputer dan Telekomunikasi yang senang mempelajari cara kerja teknologi, menyelesaikan masalah, dan membangun sesuatu yang bermanfaat. Saya percaya proses belajar yang konsisten adalah bagian penting dari pertumbuhan.</p>
+            <div class="profile-facts">
+              <div>
+                <small>PENDIDIKAN</small>
+                <strong id="education">SMK Negeri 1 Amuntai</strong>
+              </div>
+              <div>
+                <small>BIDANG</small>
+                <strong id="focus">TJKT · Web · Networking</strong>
+              </div>
+              <div>
+                <small>LOKASI</small>
+                <strong id="location">Amuntai, Kalimantan Selatan</strong>
+              </div>
+            </div>
+            <a id="emailLink" class="text-link" href="mailto:zaki@example.com">Mari terhubung <span>↗</span></a>
+          </div>
+          <aside class="quote-card reveal">
+            <span class="quote-symbol">“</span>
+            <blockquote id="heroQuote">Hari terbesar dalam hidup adalah ketika kita bertanggung jawab penuh atas sikap kita.</blockquote>
+            <span class="quote-rule"></span>
+            <small>CATATAN PRIBADI</small>
+          </aside>
+        </div>
+      </section>
+
+      <section id="skills" class="section section-dark">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <p class="eyebrow">02 — KOMPETENSI</p>
+            <h2>Hal Yang Sedang <em>Saya Kuasai.</em></h2>
+          </div>
+          <div id="skillsGrid" class="skills-grid">
+            <article class="skill-card">
+              <span>01</span>
+              <h3>Computer & Hardware</h3>
+              <p>Perawatan, instalasi sistem operasi, dan troubleshooting perangkat.</p>
+            </article>
+            <article class="skill-card">
+              <span>02</span>
+              <h3>Networking</h3>
+              <p>Dasar jaringan, kabel UTP, dan konfigurasi konektivitas.</p>
+            </article>
+            <article class="skill-card">
+              <span>03</span>
+              <h3>Web Development</h3>
+              <p>HTML, CSS, JavaScript, serta integrasi data sederhana.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section wrap">
+        <div class="section-head split-head reveal">
+          <div>
+            <p class="eyebrow">03 — PILIHAN KARYA</p>
+            <h2>Proyek Dengan <em>Tujuan</em></h2>
+          </div>
+          <p class="section-sub">Eksperimen, tugas, dan karya yang merekam proses belajar.</p>
+        </div>
+        <div id="projectsGrid" class="project-grid">
+          <article class="project-card">
+            <div class="project-cover cover-one">
+              <span>01</span>
+              <b>WEB / DESIGN</b>
+            </div>
+            <div class="project-body">
+              <small>WEB DEVELOPMENT</small>
+              <h3>Personal Portfolio</h3>
+              <p>Website pribadi untuk merangkum profil, karya, dan perjalanan belajar.</p>
+              <a href="#contact" class="text-link">Lihat detail ↗</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-cover cover-two">
+              <span>02</span>
+              <b>NETWORK / LAB</b>
+            </div>
+            <div class="project-body">
+              <small>COMPUTER NETWORK</small>
+              <h3>Praktik Jaringan</h3>
+              <p>Dokumentasi praktik kabel jaringan dan troubleshooting perangkat.</p>
+              <a href="#contact" class="text-link">Lihat detail ↗</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-cover cover-three">
+              <span>03</span>
+              <b>LEARNING / TECH</b>
+            </div>
+            <div class="project-body">
+              <small>TECHNICAL SUPPORT</small>
+              <h3>Dokumentasi Teknis</h3>
+              <p>Catatan langkah kerja instalasi, perawatan, dan perbaikan perangkat.</p>
+              <a href="#contact" class="text-link">Lihat detail ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="timeline" class="section timeline-section">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <p class="eyebrow">04 — PERJALANAN</p>
+            <h2>Langkah kecil, <em>kemajuan nyata.</em></h2>
+          </div>
+          <div id="timelineList" class="timeline-list">
+            <article class="timeline-item">
+              <span class="timeline-dot"></span>
+              <small>2025 — SEKARANG</small>
+              <div>
+                <h3>Belajar Teknik Jaringan Komputer</h3>
+                <p>Mengembangkan dasar komputer, jaringan, dan keterampilan teknologi melalui pembelajaran dan praktik.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-dot"></span>
+              <small>2025 — 2026</small>
+              <div>
+                <h3>Pengalaman Praktik Kerja Lapangan</h3>
+                <p>Mengenal lingkungan kerja dan praktik dukungan teknis di bidang komputer dan administrasi digital.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-dot"></span>
+              <small>BERIKUTNYA</small>
+              <div>
+                <h3>Terus bertumbuh</h3>
+                <p>Memperdalam pemrograman dan mengeksplorasi studi Teknik Informatika.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="credentials" class="section wrap">
+        <div class="section-head split-head reveal">
+          <div>
+            <p class="eyebrow">05 — DOKUMEN</p>
+            <h2>Sertifikat & <em>curriculum vitae.</em></h2>
+          </div>
+          <p class="section-sub"></p>
+        </div>
+        <div id="credentialsGrid" class="credentials-grid">
+          <article class="credential-card">
+            <span class="credential-icon">↗</span>
+            <div>
+              <small>DOKUMEN PROFIL</small>
+              <h3>Curriculum Vitae</h3>
+              <p>Ringkasan profil, pendidikan, dan kemampuan.</p>
+            </div>
+            <span class="muted">Tautan belum ditambahkan</span>
+          </article>
+        </div>
+        <div class="cv-action">
+          <a id="cvButton" class="btn ghost" href="#contact">Minta CV melalui kontak ↗</a>
+        </div>
+      </section>
+
+      <section id="gallery" class="section section-dark">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <p class="eyebrow">06 — GALERI & MUSIK</p>
+            <h2>Potongan cerita <em>visual.</em></h2>
+            <p class="section-sub">Momen dan soundtrack yang menemani perjalanan.</p>
+          </div>
+          <div id="galleryGrid" class="gallery-grid">
+            <div class="gallery-empty">Galeri akan tampil setelah data ditambahkan dari dashboard.</div>
+          </div>
+          <div class="music-panel">
+            <div>
+              <p class="eyebrow">NOW PLAYING IN MY WORLD</p>
+              <h3>Soundtrack pilihan</h3>
+              <p id="songQuote">Musik menjadi teman untuk fokus, refleksi, dan menikmati proses.</p>
+            </div>
+            <div id="songsGrid" class="songs-grid">
+              <a class="song-link" href="https://open.spotify.com/" target="_blank" rel="noopener">♫ <span>Jelajahi musik favorit</span> ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="guestbook" class="section wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">07 — BUKU TAMU</p>
+          <h2>Tinggalkan <em>jejak baik.</em></h2>
+          <p class="section-sub">Tulis sapaan singkat. Pesan akan ditampilkan setelah berhasil disimpan.</p>
+        </div>
+        <div class="guest-grid">
+          <form id="guestForm" class="guest-form reveal">
+            <label for="guestName">Nama</label>
+            <input id="guestName" name="name" required maxlength="80" placeholder="Nama kamu">
+            <label for="guestMessage">Pesan</label>
+            <textarea id="guestMessage" name="message" rows="4" maxlength="500" required placeholder="Tulis pesan yang baik..."></textarea>
+            <button class="btn gold" type="submit">Kirim sapaan ↗</button>
+            <p id="guestStatus" role="status"></p>
+          </form>
+          <div id="guestList" class="guest-list">
+            <p class="muted">Jadilah yang pertama meninggalkan pesan.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="wrap contact-grid">
+          <div class="reveal">
+            <p class="eyebrow">08 — HUBUNGI SAYA</p>
+            <h2>Setiap hal besar<br>dimulai dari <em>percakapan.</em></h2>
+            <p class="section-sub">Punya ide, pertanyaan, atau ingin berkolaborasi? Saya terbuka untuk terhubung.</p>
+            <div class="contact-shortcuts">
+              <a id="contactEmail" href="mailto:zaki@example.com">✉ <span>Email</span> ↗</a>
+              <a id="contactWhatsapp" href="#contact">◉ <span>WhatsApp</span> ↗</a>
+            </div>
+            <div class="digital-card">
+              <div>
+                <small>DIGITAL CONTACT CARD</small>
+                <strong>Zaki Ansyari</strong>
+                <span>Personal Portfolio · TJKT</span>
+              </div>
+              <button id="downloadVcard" class="btn ghost small-btn" type="button">Simpan kontak ↓</button>
+            </div>
+          </div>
+          <form id="contactForm" class="contact-form reveal">
+            <label for="contactName">Nama</label>
+            <input id="contactName" name="name" required maxlength="100" placeholder="Nama lengkap">
+            <label for="contactEmailInput">Email</label>
+            <input id="contactEmailInput" name="email" type="email" required maxlength="150" placeholder="nama@email.com">
+            <label for="contactMessageInput">Pesan</label>
+            <textarea id="contactMessageInput" name="message" required maxlength="2000" rows="5" placeholder="Ceritakan apa yang ingin kamu diskusikan..."></textarea>
+            <button class="btn gold" type="submit">Kirim pesan ↗</button>
+            <p id="contactStatus" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <a class="brand" href="#home">
+          <span class="brand-mark">Z</span>
+          <span>ZAKI <b>ANSYARI</b><small>PERSONAL WEBSITE</small></span>
+        </a>
+        <p>Dibangun dengan rasa ingin tahu dan kemauan untuk terus belajar.</p>
+        <span>© <span id="year"></span> Zaki Ansyari</span>
+        <a class="admin-link" href="admin.html">Admin ↗</a>
+      </div>
+    </footer>
+
+    
+
+    <script src="assets/site.js"></script>
+  </body>
+</html>
